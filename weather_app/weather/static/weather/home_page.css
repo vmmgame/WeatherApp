@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap');
+
+body {
+    margin: 0;
+    padding: 5px;
+    background-color: rgb(72, 72, 72);
+    font-family: 'Mukta', sans-serif;
+  }
+  
+.heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+    width: 50%;
+    /* border: 1px solid chocolate;
+    box-sizing: border-box;
+    border-radius: 100px; */
+    padding: 0;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+.heading h1 {
+    margin: 0;
+    color: chocolate;
+    font-size: 75px;
+    font-family: inherit;
+    border: 4px solid chocolate;
+    border-radius: 100px;
+    padding: 5%;
+    width: 50%;
+    text-align: center;
+  }
+
+
+.form-container {
+  text-align: center;
+  color: chocolate;
+  padding-bottom: 5%;
+  height: 400px;
+  width: 600px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+
+}
+
+.form-container label {
+  font-family: inherit;
+  font-size: 75px;
+  width: 600px;
+  height: 100px;
+  display: inline-block;
+  margin-bottom: 5%;
+}
+
+.form-container button {
+  flex-grow: 1;
+  width: 600px;
+  height: 15%;
+  color: rgb(72, 72, 72);
+  background-color: chocolate;
+  border: 1px solid chocolate;
+  border-radius: 25px;
+
+}
+
+.form-container input {
+  flex-grow: 1;
+  width: 600px;
+  height: 15%;
+  border: 1px solid chocolate;
+  border-radius: 25px;
+  margin-bottom: 5%;
+  text-align: center;
+}

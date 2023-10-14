@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    Home Page
+{% endblock title %}
+
+{% block style %}
+  <link rel="stylesheet" href="{% static 'weather/home_page.css' %}">
+{% endblock style %}
+
+{% block content %}
+  
+<header class="heading">
+  <h1>Weather App</h1>
+</header>
+
+<div class="form-container">
+  <form action="/" method="POST">
+    {% csrf_token %}
+    {{ form }}
+    {% comment %} <label for="city">Enter City:</label>
+    <input type="text" id="city" name="city"> {% endcomment %}
+    <button class="search-button">Search</button>
+  </form>
+</div>
+
+{% endblock content %}

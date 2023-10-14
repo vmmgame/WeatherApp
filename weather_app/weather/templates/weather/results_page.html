@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Today's Weather{% endblock title %}
+
+{% block style %}
+<link rel="stylesheet" href="{% static 'weather/results_page.css' %}">
+{% endblock style %}
+
+{% block content %}
+
+<nav><a class="link" href="/">Home Page</a></nav>
+<hr>
+
+<h2></h2>
+
+<main>
+    <div class="box">
+        <h1>Feels Like</h1>
+        <p>{{ feels_like }}&deg;F</p>
+      </div>
+      <div class="box">
+        <h1>Temperature</h1>
+        <p>{{ temp }}&deg;F</p>
+      </div>
+      <div class="box">
+        <h1>Description</h1>
+        <p>{{ descript|title }}</p>
+      </div>
+</main>
+
+
+{% endblock content %}
